@@ -34,3 +34,11 @@ The purpose of the shift is to simulate future stock price.
 
 After the shift, the rows with empty values are removed using df.dropna(). 
 After splitting the data to training set and test set, StandardScaler() is used to scale the data before the training.
+
+Data Story:
+The line plot shows that although there are some fluctuations, the stock price increases in general as the time increases. 
+
+As shown in the histogram, all the  columns are highly correlated except the daily_return column. 
+
+In conclusion, the trend of the stock prices is heading higher. For training the model, it might be a good idea to eliminate daily_return column as it is not correlated to other data.
+
